@@ -14,19 +14,27 @@
   border: radius 2%;;
 }
 
-.card__list {
+ul.card__list {
+  list-style-type: none;
   text-align: left;
-  line-height: 150%;
+  margin: 2%;
+  padding: 0;
+  overflow: hidden;
 }
 
+/*
+li.card__list--active a:hover {
+  font-weight: bolder;
+}
+*/
 
-.card__dark-theme {
+.card--dark-theme {
   background-color: rgb(17, 18, 18);
   color: whitesmoke;
   font-family: 'Courier New', Courier, monospace;
 }
 
-.card__light-theme {
+.card--light-theme {
   background-color: lightcyan;
   color: darkslategrey; 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
@@ -34,6 +42,4 @@
 
 img {
     max-width: 200px;
-}
-
-/* Happy coding! */     
+}  
