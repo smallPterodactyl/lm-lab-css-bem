@@ -12,23 +12,33 @@
 <body>
     <h1>BEM Wars</h1>
     <div class="container">
-        <div>
+
+        <div class="container__card card__dark-theme" >
             <h2>The Dark Side</h2>
             <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+            <div > 
+            <ul>
+                <li class="card__list">Nesting!</li>
+                <li>Conflict!</li>
+                <li>Specificity Wars!</li>
+                <li>Cookies</li>
+            </ul>
+            </div>
         </div>
 
-        <div>
+        <div class="container__card card__light-theme">
             <h2>The Force</h2>
             <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+            <div class="card__list"> 
+                <ul>
+                    <li>Love</li>
+                    <li>Beauty</li>
+                    <li>CSS that Scales!</li>
+                    <li>Great warrior. Wars not make one great!</li>
+                </ul>
+            </div>
         </div>
+
     </div>
 </body>
 

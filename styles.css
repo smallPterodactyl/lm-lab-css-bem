@@ -1,7 +1,39 @@
-/* You can delete / re-write this img class  */
+
+.container {
+  display:flex;
+  justify-content: space-around;
+  align-items: baseline;
+  column-gap: 40px;
+
+}
+
+.container__card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2px 16px;
+  border: radius 2%;;
+}
+
+.card__list {
+  text-align: left;
+  line-height: 150%;
+}
+
+
+.card__dark-theme {
+  background-color: rgb(17, 18, 18);
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card__light-theme {
+  background-color: lightcyan;
+  color: darkslategrey; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
 
 img {
     max-width: 200px;
 }
 
-/* Happy coding! */
+/* Happy coding! */     
