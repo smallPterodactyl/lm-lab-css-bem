@@ -60,11 +60,13 @@ img {
 }  
 
 /* Button structure */
-
 .buttons {
   align-items: center;
   padding: 20px 40px;
   border: radius 10px;
   border-radius: 25px;
   font-size: larger;
+  min-inline-size: 275px ;
+
 }
+
