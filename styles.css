@@ -1,20 +1,44 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1.2;
+}
 
 .container {
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  margin: 5%
+  margin: 5%;
+  align-content: space-between;
 }
+
+.button {
+  align-items: center;
+  padding: 20px 40px;
+  border: radius 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: larger;
+  min-inline-size: 275px;
+}
+
+.button.dark-button--hover:hover {background-color: red}
+.button.light-button--hover:hover {background-color: cyan}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+
+
+
 
 /*Heading modifiers*/
 .bold--heading {      
   font-weight: darker;
-  text-align: center;
+  font-size: larger;
 }
-
-/*Structure of the card, list and list items
-*/
 
 .container__card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -30,13 +54,13 @@ ul.card__list {
   width: 200px;
 }
 
-li.card__list {
+li.list__item {
   text-align:left;
 }
 
 
-/* Modifier to idenfity an active item list */
-li.card__list--active a:hover {
+/* Modifier to idenfity threatening Dark Force items */
+li.list__item--active a:hover {
   font-weight: bolder;
 }
 
@@ -59,14 +83,5 @@ img {
   margin: auto;
 }  
 
-/* Button structure */
-.buttons {
-  align-items: center;
-  padding: 20px 40px;
-  border: radius 10px;
-  border-radius: 25px;
-  font-size: larger;
-  min-inline-size: 275px ;
 
-}
 
