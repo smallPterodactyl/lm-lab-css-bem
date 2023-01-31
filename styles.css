@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  line-height: 1.2;
+  font-size: smaller;
 }
 
 .container {
@@ -23,21 +23,14 @@ body {
   min-inline-size: 275px;
 }
 
-.button.dark-button--hover:hover {background-color: red}
-.button.light-button--hover:hover {background-color: cyan}
-
 .button:active {
   transform: translateY(4px);
 }
 
 
-
-
-
 /*Heading modifiers*/
 .bold--heading {      
   font-weight: darker;
-  font-size: larger;
 }
 
 .container__card {
@@ -59,23 +52,27 @@ li.list__item {
 }
 
 
-/* Modifier to idenfity threatening Dark Force items */
+/* Modifiers and skins for Dark Force themes */
 li.list__item--active a:hover {
   font-weight: bolder;
 }
 
-/*Dark and light card skins*/
+.button.dark-button--hover:hover {background-color: red}
+
 .card--dark-theme {
   background-color: rgb(17, 18, 18);
   color: whitesmoke;
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Modifiers and skins for Jedi themes */
 .card--light-theme {
   background-color: lightcyan;
   color: darkslategrey; 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
+
+.button.light-button--hover:hover {background-color: cyan}
 
 img {
   max-width: 200px;
